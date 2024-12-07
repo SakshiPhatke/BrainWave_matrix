@@ -1,0 +1,122 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .todo-app {
+    background: #ffffff;
+    color: #333;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  .header p {
+    margin-top: 8px;
+    font-size: 0.9em;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  #task-input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+    background: #f2f2f2;
+  }
+  
+  #add-task-btn {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #add-task-btn:hover {
+    background: #1a58c2;
+  }
+  
+  #task-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #ffffff;
+    transition: transform 0.3s ease;
+  }
+  
+  .task-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .task-item span {
+    font-size: 1rem;
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  .task-item.completed span {
+    text-decoration: line-through;
+    color: #a9a9a9;
+  }
+  
+  .delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background: #c0392b;
+  }
+  
